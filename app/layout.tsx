@@ -1,24 +1,31 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ChatbotWrapper } from "@/components/ChatbotWrapper"
-import { BackToTop } from "@/components/BackToTop"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { ChatbotWrapper } from "@/components/ChatbotWrapper";
+import { BackToTop } from "@/components/BackToTop";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Portfolio",
+  title: "Asher Portfolio",
   description: "Personal portfolio showcasing my work and experience",
   generator: "v0.dev",
-}
+  icons: [
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      url: "/favicon.svg", 
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className="dark scroll-smooth">
@@ -30,9 +37,5 @@ export default function RootLayout({
         <BackToTop />
       </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'
