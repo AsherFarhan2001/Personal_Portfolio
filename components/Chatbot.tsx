@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X, Send, User, Bot } from "lucide-react"
 import { useChat } from "ai/react"
 import { ChatbotIcon } from "./ChatbotIcon"
+import { RobotIcon } from "./RobotIcon"
 
 function TypingIndicator() {
   return (
@@ -42,8 +43,12 @@ export function Chatbot() {
     api: "/api/chat",
     onError: (err) => {
       console.error("Chat error:", err)
-      setError("An error occurred. Please try again.")
       setIsTyping(false)
+      setMessages(prev => [...prev, {
+        id: Date.now().toString(),
+        role: "assistant",
+        content: "I apologize, but I'm having trouble processing your request at the moment. Please try again in a few moments. If you need immediate assistance, you can reach out to Asher directly at asherfarhan123@gmail.com."
+      }])
     },
     onFinish: () => {
       setIsTyping(false)
@@ -105,8 +110,7 @@ export function Chatbot() {
               <div className="flex items-center space-x-3">
                 <div className="relative">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
-                    <Bot className="w-6 h-6 text-white" />
-                    {/* Status dot */}
+                    <RobotIcon className="w-6 h-6" />
                     <div className="absolute -right-1 -bottom-1 w-3 h-3 bg-green-500 rounded-full border-2 border-zinc-800">
                       <div className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-75"></div>
                     </div>
@@ -139,7 +143,9 @@ export function Chatbot() {
                   >
                     {message.role === "assistant" && (
                       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
-                        <Bot className="w-5 h-5 text-white" />
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
+                        <RobotIcon className="w-6 h-6" />
+                        </div>
                       </div>
                     )}
                     <div className={`flex flex-col ${message.role === "user" ? "items-end" : "items-start"}`}>

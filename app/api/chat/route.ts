@@ -32,10 +32,7 @@ export async function POST(req: Request) {
     return response.toDataStreamResponse()
   } catch (error) {
     console.error("Error in chat API:", error)
-    return new Response(JSON.stringify({ error: "An error occurred while processing your request" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    })
+    throw error 
   }
 }
 
