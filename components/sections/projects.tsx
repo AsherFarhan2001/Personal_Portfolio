@@ -27,8 +27,8 @@ const projects = [
     tags: ["Python", "FastAPI", "OpenAI", "LangChain", "Docker", "Pinecone"],
   },
   {
-    title: "Personal Portfolio",
-    description: "A sleek and interactive website showcasing my skills, experience, and education—all in one place for easy access.",
+    title: "AI-Powered Portfolio",
+    description: "A sleek and interactive AI based portfolio showcasing my skills, experience, and education—all in one place for easy access.",
     image: "/projects/portfolio.jpg",
     tags: ["NextJs", "Groq", "TailwindCSS"],
   },
