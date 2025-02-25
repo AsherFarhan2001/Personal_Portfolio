@@ -10,6 +10,7 @@ import { Skills } from "@/components/sections/skills"
 import { Services } from "@/components/sections/services"
 import { Projects } from "@/components/sections/projects"
 import { Contact } from "@/components/sections/contact"
+import { Certifications } from "@/components/sections/certifications"
 
 export default function Home() {
   const containerRef = useRef(null)
@@ -37,6 +38,7 @@ export default function Home() {
       <Skills />
       <Services />
       <Projects />
+      <Certifications />
       <Contact />
     </motion.main>
   )

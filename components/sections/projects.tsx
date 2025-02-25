@@ -86,7 +86,7 @@ export function Projects() {
           Explore my latest projects showcasing innovative solutions across various domains
         </motion.p>
 
-        <motion.div style={{ y }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <motion.div style={{ y }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {projects.map((project, index) => (
             <motion.div
               key={index}

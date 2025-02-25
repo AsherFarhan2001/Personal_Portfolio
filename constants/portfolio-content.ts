@@ -232,6 +232,34 @@ Comprehensive HR management system for efficient workforce administration.
 - Backup strategies
 - Performance optimization
 
+## Certifications
+
+### Teaching Experience Certificate
+**National University of Computer and Emerging Sciences**
+- **Position**: Teaching Assistant
+- **Course**: Software Design & Analysis
+- **Duration**: Fall-2023
+- **Roll Number**: 19i-0618
+- **Responsibilities**: 
+  - Evaluated course assessment items
+  - Provided beneficial assistance to instructor and students
+- **Issued**: February 15, 2024
+- **Issuer**: Dr. Kashif Munir, Professor & Head, FAST School of Computing
+
+### Microsoft Certified: Azure Fundamentals
+**Microsoft**
+- **Issued**: May 27, 2023
+- **Credential ID**: [Verifiable on Microsoft's platform]
+- **Skills Validated**:
+  - Azure Cloud Platform
+  - Cloud Data Management
+  - Cloud Networking
+  - Cloud Security
+  - Cloud Services
+  - Cloud Storage
+  - Virtualization
+- **Description**: Demonstrated foundational level knowledge of cloud services and their implementation with Microsoft Azure.
+
 ## Contact Information
 
 ### Professional Networks

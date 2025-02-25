@@ -66,6 +66,18 @@ const skillCategories = [
       { name: "Jenkins", icon: "/skills/jenkins.png" },
     ],
   },
+  {
+    name: "Tools",
+    icon: Cloud,
+    skills: [
+      { name: "Cursor", icon: "/skills/cursor.jpg" },
+      { name: "VS Code", icon: "/skills/code.png" },
+      { name: "Postman", icon: "/skills/postman.png" },
+      { name: "Insomnia", icon: "/skills/insomnia.png" },
+      { name: "Jira", icon: "/skills/jira.png" },
+      { name: "Jupyter", icon: "/skills/notebook.png" },
+    ],
+  },
 ]
 
 export function Skills() {
